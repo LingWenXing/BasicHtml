@@ -1,0 +1,69 @@
+/*
+Created on 24 Oct 2020
+@author: WenXing
+*/
+
+body {
+  margin: 0px;
+  font: normal 14px sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  overflow: hidden;
+  margin-bottom: -20px;
+  background-color: #333;
+}
+.top-bar a{
+float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bar-item {
+  padding: 5px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#sunset-gradient {
+  height: 500px;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+
+#rb-gradient {
+  height: 500px;
+  background-color: #cccccc;
+  background-image: linear-gradient(blue, white);
+}
+
+#coral-gradient {
+  height: 500px;
+  background-color: #cccccc;
+  background-image: linear-gradient(coral, white);
+}
+
+#indigo-gradient {
+  height: 500px;
+  background-color: #cccccc;
+  background-image: linear-gradient(indigo, white);
+}
+
+#main-gradient {
+  height: 500px;
+  background-color: #cccccc;
+  background-image: linear-gradient(darkblue, white);
+}
