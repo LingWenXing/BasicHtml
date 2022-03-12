@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form action="success.html" method="" style="margin: 0 auto; width:250px;">
+        <table>
+            <p>
+                <caption style="text-align:center; color:blue"><h1>Feedback Form</h1></caption>
+            </p>
+            <tr>
+                <td>
+                    <label>First Name </label>
+                </td>
+                <td>
+                    <input type="text" name="firstname" placeholder="Enter your first name" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Last Name </label>
+                </td>
+                <td>
+                    <input type="text" name="lastname" placeholder="Enter your last name" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>City </label>
+                </td>
+                <td>
+                    <input type="text" name="city" placeholder="Enter your city" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Are you married?</p>
+                </td>
+                <td>
+                    <label for="my">Yes</label>
+                    <input id="my" type="radio" name="married" value="">
+                    <label for="mn">No</label>
+                    <input id="mn" type="radio" name="married" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Select your Vaccination Status</p>
+                </td>
+                <td>
+                    <input type="checkbox" name="status" value="dose1">1st Dose<br>
+                    <input type="checkbox" name="status" value="dose2">2nd Dose<br>
+                    <input type="checkbox" name="status" value="booster">Booster Dose<br>
+                </td>
+            </tr>
+        </table>
+        <textarea id="feedback" name="feedback" rows="4" cols="50">
+        -- Please leave a comment if any --
+        </textarea>
+        <br><br>
+        <input type="submit" value="Click here to Submit"><br>
+    </form>
+</body>
+</html>
