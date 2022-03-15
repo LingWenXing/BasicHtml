@@ -7,14 +7,15 @@
     <title>Forms</title>
 </head>
 <body>
+    <legend>Personal Information</legend>
     <form action="success.html" method="">
         <table>
             <tr>
                 <td>
-                    <label>First Name </label>
+                    <label for="1">First Name </label>
                 </td>
                 <td>
-                    <input type="text" name="firstname" placeholder="Enter your first name" required><br>
+                    <input id="1" type="text" name="firstname" placeholder="Enter your first name" required autofocus><br>
                 </td>
             </tr>
             <tr>
@@ -31,6 +32,14 @@
                 </td>
                 <td>
                     <input type="text" name="city" placeholder="Enter your city" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email </label>
+                </td>
+                <td>
+                    <input type="email" name="email" placeholder="Enter a valid Email Id" required><br>
                 </td>
             </tr>
             <tr>
@@ -99,6 +108,14 @@
                     <input type="search" name="search" placeholder="Search"><br>
                     <input type="tel" name="tel" value="Tel"><br>
                     <input type="number" name="number" placeholder="Enter a number"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Rate your HTML Knowledge </label>
+                </td>
+                <td>
+                    <input type="range" name="rating" max="10" min="1" ><br>
                 </td>
             </tr>
         </table>
