@@ -6,6 +6,7 @@ Created on 15 Mar 2022
 body {
   margin: 0px;
   font: normal 14px sans-serif;
+  background-image: url('../css/restaurant.jpg');
 }
 
 .top-bar {
@@ -67,5 +68,10 @@ float: left;
   height: 500px;
   background-color: #cccccc;
   background-image: linear-gradient(darkblue, white);
+}
+
+.curw{
+  font-family: cursive;
+  background-color:white
 }
 

@@ -1,31 +1,48 @@
-<html>
-<!-- Here is the comment -->
-
-<!-- Head section -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- Ref CSS file, title -->
-<title> This is my first Html file </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ref CSS file, title -->
+    <link rel="stylesheet" type="text/css" href="external.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+        p{
+            color:pink;
+            background-color: black;
+        }
+    </style>
+    <title> This is my first Html file </title>
 </head>
 
 <!-- Body section -->
 <body>
-<p>Hello Everyone. </p>
-<p>Welcome to my first HTML file. </p>
-<p>There is still a long way to go. </p>
-<p>Cheers!! </p>
-
-<h1> This is h1 tag </h1>
-<h2> This is h2 tag </h2>
-<h3> This is h3 tag </h3>
-<h4> This is h4 tag </h4>
-<h5> This is h5 tag </h5>
-<h6> This is h6 tag </h6>
-
-<p><b>This statement is bold </b></p>
-<p><i>This statement is italic </i></p>
-<strong>This statement is inside a strong tag </strong></br>
-<em>This statement is inside a emphasis tag </em>
-<p><h1><strong><em>This is a strong and also emphasis statement</em></strong></h1></p>
+    <div class="bluebor">
+        <p style="color:pink; background-color:grey">Hello Everyone. </p>
+        <p style="color:aqua; background-color:tomato">Welcome to my first HTML file. </p>
+        <p>There is still a long way to go. </p>
+        <p>Cheers!! </p>
+    </div>
+    <div>
+        <h1> This is h1 tag </h1>
+        <h2 id="col1"> This is h2 tag </h2>
+        <h3> This is h3 tag </h3>
+        <h4> This is h4 tag </h4>
+        <h5> This is h5 tag </h5>
+        <h6> This is h6 tag </h6>
+        <p>Default Unordered List</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <p id="col2"><b>This statement is bold </b></p>
+        <p id="col3"><i>This statement is italic </i></p>
+        <strong>This statement is inside a strong tag </strong></br>
+        <em>This statement is inside a emphasis tag </em>
+        <p><h1><strong><em>This is a strong and also emphasis statement</em></strong></h1></p>
+    </div>
 </body>
 
 </html>

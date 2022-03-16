@@ -1,0 +1,47 @@
+P {
+    color:chocolate;
+    background-color: blue;
+}
+h1{
+    color:blue;
+    border-style: groove;
+    background-color: aqua;
+    font-family: Hurricane;
+}
+h3{
+    color:blueviolet
+}
+ul{
+    color:aqua;
+}
+div{
+    border-style: double;
+    border-width: px;
+    border-color: brown;
+    text-align: center;
+    background-color: cyan;
+}
+.bluebor{
+    background-color: steelblue;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+}
+body{
+    background:url(https://img.freepik.com/free-photo/interior-wall-mockup-with-green-plantgreen-wall-shelf3d-rendering_41470-4431.jpg?t=st=1647415567~exp=1647416167~hmac=f42b2eceb0675ea1486edcf3e01e68f10dc6138f47628cad6fba26423a82152b&w=740);
+    background-color: cadetblue;
+}
+
+#col1{
+    color:crimson;
+}
+#col2{
+    color:darkcyan;
+}
+#col3{
+    color:darkorchid;
+}
+
+h3,h4,h5{
+    background-color: blueviolet;
+}
