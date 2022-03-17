@@ -1,0 +1,51 @@
+div header p{
+    color: green;
+}
+div#innerDiv p{
+    color: red;
+}
+footer p{
+    color: blue;
+}
+header h2{
+    color: pink;
+}
+header > a{ /*directChildSelector*/
+    color: red;
+    background-color: black;
+}
+footer > a{ /*directChildSelector*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div>h2{
+    color: white;
+    background-color: black;
+}
+div > footer > h2{
+    color: red;
+}
+div > footer > a > sup{
+    color: red;
+}
+h2+p{
+    color: black;
+    background-color: blueviolet;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div>p+a{
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2~p{
+    border:red;
+    border-width: 2px;
+    border-style: solid;
+}
+h2~a{
+    border-color: aqua;
+    border-width: 2px;
+    border-style: dotted;
+}
+a:visited {
+    color:coral;
+}   /* visited link */

@@ -1,0 +1,45 @@
+[align="center"]{
+    color: blue;
+}
+p[align^="l"]{
+    color: red;
+}
+p[align^="r"]{
+    color: green;
+}
+h1[align$="r"]{
+    color: darkblue;
+    background-color: burlywood;
+}
+a[href$=".com"]{
+    color: white;
+    background-color: black;
+}
+a[title*="visit"]{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a[title~="Facebook"]{
+    color: white;
+    background-color: blue;
+}
+h1[lang|="en"]{
+    color: yellow;
+}
+/* unvisited link */
+a:link{
+    color: black;
+    background-color: yellow;
+}
+/* visited link */
+a:visited{
+    color: pink;
+    background-color: black;
+}
+a:hover{
+    color: white;
+    background-color: tomato;
+}
+a:active{
+    color: blue;
+    background-color: coral;
+}
