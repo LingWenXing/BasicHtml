@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ref CSS file, title -->
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <title>Pseudo Class Selectors for Forms</title>
+</head>
+<body>
+    <div style="font-family: monospace;">
+        <form action="success.html">
+            <table>
+                <tr>
+                    <td>
+                        <label for="1">Enter the name</label>
+                    </td>
+                    <td>
+                        <input id="1" type="text" required autofocus><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="2">Enter the email</label>
+                    </td>
+                    <td>
+                        <input id="2" type="email" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="3">Enter the mobile</label>
+                    </td>
+                    <td>
+                        <input id="3" type="number"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="4">Enter the password</label>
+                    </td>
+                    <td>
+                        <input id="4" type="password"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="5">Enter confirm the password</label>
+                    </td>
+                    <td>
+                        <input id="5" type="password"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Are you married?</p>
+                    </td>
+                    <td>
+                        <label for="my">Yes</label>
+                        <input id="my" type="radio" name="married" value="">
+                        <label for="mn">No</label>
+                        <input id="mn" type="radio" name="married" value="" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Select your Vaccination Status</p>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="status" value="dose1" checked >1st Dose<br>
+                        <input type="checkbox" name="status" value="dose2">2nd Dose<br>
+                        <input type="checkbox" name="status" value="booster">Booster Dose<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+            <h1>Hello everyone!</h1>
+            <p><span>Hello this is CSS session</span></p>
+        </form>
+    </div>
+</body>
+</html>
