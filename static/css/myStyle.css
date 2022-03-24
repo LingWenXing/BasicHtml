@@ -87,3 +87,7 @@ li a{
 li a:hover{
   background-color: burlywood;
 }
+
+#captionColor{
+  color:white;
+}
