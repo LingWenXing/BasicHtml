@@ -142,5 +142,117 @@
         return prev + currvalue;
     }
     document.write("Total sum of arr4: "+total+"<br>")
+    var car = {
+        brand: "BMW",
+        model: "530d",
+        color: "White",
+        year: 2017
+    }
+    document.write(car.brand+"<br>")
+    document.write(car.model+"<br>")
+    document.write(car.color+"<br>")
+    document.write(car.year+"<br>")
+    // instanceof Object
+    var car1 = new Object();
+    car1.brand="Toyota";
+    car1.model="531d";
+    car1.color="Black";
+    car1.year="2018";
+    document.write(car1.brand+"<br>")
+    document.write(car1.model+"<br>")
+    document.write(car1.color+"<br>")
+    document.write(car1.year+"<br>")
+    //constractor of car
+    function carConst(brand,model,color,year){
+        this.brand=brand;
+        this.model=model;
+        this.color=color;
+        this.year=year;
+    }
+    newCar = new carConst("Volvo","520","Silver",2019);
+    document.write(newCar.brand+"<br>")
+    document.write(newCar.model+"<br>")
+    document.write(newCar.color+"<br>")
+    document.write(newCar.year+"<br>")
+
+    function trainerObj(name,skill,location){
+        this.name=name;
+        this.skill=skill;
+        this.location=location;
+        this.setTrainerLoc = function(value) {
+            this.location = value;
+        }
+    }
+    trainer = new trainerObj("Ace","FullStack","NIL");
+    document.write(trainer.name+"<br>")
+    document.write(trainer.skill+"<br>")
+    document.write(trainer.location+"<br>")
+    trainer.setTrainerLoc("India");
+    document.write(trainer.location+"<br>")
+    var f = () => {
+        document.write("Hello All <br>");
+        return 1;
+    }
+    document.write(f()+"<br>");
+    var a = (width,height)=>width*height;
+    function rect(width,height){
+        this.width=width;
+        this.height=height;
+        
+        // this.getArea = function(){
+        //     return this.width*this.height;
+        // }
+    }
+    // var rect1 = new rect(4,6);
+    document.write(a(4,6)+"<br>");
+    // var rect2 = new rect(60,40);
+    document.write(a(10,3)+"<br>");
+    let x1 = 2.36459;
+    let y1 = 200;
+    document.write(x1+"<br>");
+    document.write(y1+"<br>");
+
+    let z = new Number(200);
+    document.write(z+"<br>");
+
+    document.write(typeof x1+"<br>");
+    document.write(typeof y1+"<br>");
+    document.write(typeof z+"<br>");
+    document.write(typeof x1.toString()+"<br>");
+    document.write(x1.toExponential()+"<br>");
+    document.write("Fixed: "+x1.toFixed(4)+"<br>");
+    document.write("Precision: "+x1.toPrecision(4)+"<br>");
+    document.write(x1.valueOf()+"<br>");
+
+    let _y = true;
+    let _z = false;
+    let _a = "10";
+    document.write(typeof x1+"<br>");
+    document.write(typeof _y+"<br>");
+    document.write(typeof _z+"<br>");
+    document.write(typeof _a+"<br>");
+
+    document.write(typeof Number(x1)+"<br>");
+    document.write(typeof Number(_y)+"<br>");
+    document.write(typeof Number(_z)+"<br>");
+    document.write(typeof Number(_a)+"<br>");
+
+    let _b = "String";
+    document.write(typeof Number(_b)+"<br>");
+
+    let _c = Number.MAX_VALUE;
+    document.write(_c+"<br>");
+    let _d = Number.MIN_VALUE;
+    document.write(_d+"<br>");
+
+    let _e = 100/0;
+    let _f = -100;
+    document.write(Number.isFinite(_e)+"<br>");
+    document.write(Number.isFinite(_f)+"<br>");
+
+    let _m = Number.POSITIVE_INFINITY;
+    let _n = Number.NEGATIVE_INFINITY;
+    document.write(_m+"<br>");
+    document.write(_n+"<br>");
 </script>
 </html>

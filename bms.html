@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Book Management Software</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    alert("Welcome to the Best Book Management System.\nHere you can now maintain your books easily")
+    var books=[];
+    var input = prompt("What operation do you want to perform:\nAdd a book => [Add]\nView all books? => [View]\nDelete a book => [Del]\nExit System => [Exit]")
+    while(input!="Exit"){
+        if(input=="Add"){
+            addBook();
+        }else if(input=="View"){
+            viewBooks();
+        }else if(input=="Del"){
+            deleteBook();
+        }else {
+            document.write("Please enter a valid option <br>");
+        }
+        input = prompt("What operation do you want to perform:\nAdd a book => [Add]\nView all books? => [View]\nDelete a book => [Del]\nExit System => [Exit]")
+    }
+    alert("Thank you for using the system. Have a nice day!")
+
+
+    function addBook(){
+        var book = prompt("Enter the name of the Book to be added: ");
+        books.push(book);
+    }
+    function viewBooks(){
+        console.log("The available books are: <br>")
+        for(var b of books){
+            console.log(b+"<br>");
+        }
+    }
+    function deleteBook(){
+        var name = prompt("Enter the name of the book to be deleted: ");
+        var index = books.indexOf(name);
+        if(index==-1){
+            console.log("Specified book is not present")
+        }else{
+            var confirm = prompt("Confirm? [Y/N]");
+            if(confirm=="Y"){
+                books.splice(index,1);
+                console.log("Specified book is deleted")
+            }else{
+                console.log("Delete failed")
+            }
+            
+        }
+    }
+
+
+</script>
