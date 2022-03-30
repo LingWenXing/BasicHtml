@@ -7,7 +7,8 @@
     <title>Feedback Form</title>
 </head>
 <body>
-    <form action="success.html" method="" style="margin: 0 auto; width:250px;">
+    <!-- <form action="success.html" method="" style="margin: 0 auto; width:250px;"> -->
+    <form action="" method="" style="margin: 0 auto; width:250px;">
         <table>
             <p>
                 <caption style="text-align:center; color:blue"><h1>Feedback Form</h1></caption>
@@ -17,7 +18,7 @@
                     <label>First Name </label>
                 </td>
                 <td>
-                    <input type="text" name="firstname" placeholder="Enter your first name" required><br>
+                    <input type="text" name="firstname" placeholder="Enter your first name" id="firstName" required><br>
                 </td>
             </tr>
             <tr>
@@ -25,7 +26,7 @@
                     <label>Last Name </label>
                 </td>
                 <td>
-                    <input type="text" name="lastname" placeholder="Enter your last name" required><br>
+                    <input type="text" name="lastname" placeholder="Enter your last name" id="lastName" required><br>
                 </td>
             </tr>
             <tr>
@@ -33,7 +34,15 @@
                     <label>City </label>
                 </td>
                 <td>
-                    <input type="text" name="city" placeholder="Enter your city" required><br>
+                    <input type="text" name="city" placeholder="Enter your city" id="city" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Email" id="email" required>
                 </td>
             </tr>
             <tr>
@@ -62,7 +71,8 @@
         -- Please leave a comment if any --
         </textarea>
         <br><br>
-        <input type="submit" value="Click here to Submit"><br>
+        <input type="submit" onclick="check()" value="Click here to Submit"><br>
     </form>
 </body>
+<script src="../static/js/feedback.js" type="text/javascript"></script>
 </html>

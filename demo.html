@@ -254,5 +254,201 @@
     let _n = Number.NEGATIVE_INFINITY;
     document.write(_m+"<br>");
     document.write(_n+"<br>");
+
+    const dateOj = new Date();
+    document.write(dateOj.getTime()+"<br>");
+    document.write(dateOj.getFullYear()+"<br>");
+    var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+    document.write("The current month is "+months[dateOj.getMonth()]+"<br>");
+    document.write("The current date is "+dateOj.getDate()+"<br>");
+    document.write("The current hours is "+dateOj.getHours()+"<br>");
+    document.write("The current minutes is "+dateOj.getMinutes()+"<br>");
+    document.write("The current milliseconds is "+dateOj.getMilliseconds()+"<br>");
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    document.write("The current day is "+days[dateOj.getDay()]+"<br>");
+    document.write("The current UTC Date is "+dateOj.getUTCDate()+"<br>");
+    document.write("The current UTC Hours is "+dateOj.getUTCHours()+"<br>");
+    document.write("The current UTC Minutes is "+dateOj.getUTCMinutes()+"<br>");
+    document.write("The current UTC Milliseconds is "+dateOj.getUTCMilliseconds()+"<br>");
+    
+    var str = "Hello to everyone, \nWelcome to JavaScript sessions!!\nLearn by practice sessions";
+    document.write(str+"<br>");
+    var pattern = /[^0-9]/g; // /to/g; /JavaScript/i; /sessions/m; /[abc]/g; /[a-z]/g; /[0-9]/g;
+
+    var res=str.match(pattern)
+    document.write(res+"<br>");
+    var str1 = new String("Hello");
+    document.write(str1+"<br>");
+    document.write(str.length+"<br>");
+    document.write(str1.length+"<br>");
+    document.write(str.charAt(6)+"<br>");
+    document.write(str.charCodeAt(6)+"<br>");
+    document.write(str.charCodeAt(0)+"<br>");
+    document.write(str.indexOf("e")+"<br>");
+    document.write(str.lastIndexOf("e")+"<br>");
+    document.write("Math.round(4.234): "+Math.round(4.234)+"<br>");
+    document.write("Math.ceil(4.234): "+Math.ceil(4.234)+"<br>");
+    document.write("Math.floor(4.234): "+Math.floor(4.234)+"<br>");
+    document.write("Math.trunc(4.234): "+Math.trunc(4.734)+"<br>");
+    document.write("Math.sign(4.234): "+Math.sign(4.734)+"<br>");
+    document.write("Math.sign(-4.234): "+Math.sign(-4.734)+"<br>");
+    document.write("Math.sign(0): "+Math.sign(0)+"<br>");
+    document.write("Math.pow(10,2): "+Math.pow(10,2)+"<br>");
+    document.write("Math.sqrt(81): "+Math.sqrt(81)+"<br>");
+    document.write("Math.abs(-4.234): "+Math.abs(-4.234)+"<br>");
+    document.write("Math.sin(90*Math.PI/180): "+Math.sin(90*Math.PI/180)+"<br>");
+    document.write("Math.sin(180*Math.PI/180): "+Math.sin(180*Math.PI/180)+"<br>");
+    document.write("Math.sin(270*Math.PI/180): "+Math.sin(270*Math.PI/180)+"<br>");
+
+    document.write("Math.cos(0*Math.PI/180): "+Math.cos(0*Math.PI/180)+"<br>");
+    document.write("Math.cos(180*Math.PI/180): "+Math.cos(180*Math.PI/180)+"<br>");
+
+    document.write("Math.max(10,2,5,1,80,200,-400): "+Math.max(10,2,5,1,80,200,-400)+"<br>");
+    document.write("Math.min(10,2,5,1,80,200,-400): "+Math.min(10,2,5,1,80,200,-400)+"<br>");
+
+    document.write("Math.random(): "+Math.random()+"<br>");
+    document.write("Math.log(3): "+Math.log(3)+"<br>")
+    
+    var webTechStr = "Web-Tech\tis 100% \vfun to \rlearn. You neeeeeeed to learn,\fEnjoy the course 123: JS haha";
+    document.write(webTechStr);
+    document.write("<br>");
+
+    var ptr = /haha$/g; // /e{5,}/g; /\d/g; /\w/g; /\D/g; /\s/g; /\bto/; /\Brn/; /\f/; /\r/; /\v/;
+    var result = webTechStr.match(ptr);
+    document.write(result+"<br>");
+
+    // let carModel = "520";
+    // let carBrand = "BMW";
+    // let carYear = 2020;
+    class carA {
+        constructor(){
+            let carModel, carBrand, carYear;
+        }
+        setModel(carModel){
+            this.carModel=carModel;
+        }
+        setBrand(carBrand){
+            this.carBrand=carBrand;
+        }
+        setYear(carYear){
+            this.carYear=carYear;
+        }
+        getCarModel(){
+            return this.carModel;
+        }
+        getCarBrand(){
+            return this.carBrand;
+        }
+        getCarYear(){
+            return this.carYear;
+        }
+        // carModel = "520";
+        // carBrand = "BMW";
+        // carYear = 2020;
+
+        dispCarInfo(){
+            return (this.carModel+" "+this.carBrand+" "+this.carYear);
+        }
+        display(){
+            document.write("Driving now<br>");
+        }
+    };
+    let ca = new carA();
+    document.write(ca.dispCarInfo());
+    document.write("<br>");
+    ca.setModel("520");
+    ca.setBrand("BMW");
+    ca.setYear(2020);
+    document.write(ca.dispCarInfo());
+    document.write("<br>");
+    document.write("Data of car using getter methods<br>");
+    document.write(ca.getCarModel()+" "+ca.getCarBrand()+" "+ca.getCarYear());
+    document.write("<br>");
+    var i = 0;
+    while(i<=10){
+        let sum = 0;
+        sum += i;
+
+        var varSum = 0;
+        varSum += i;
+        i++;
+    }
+    document.write("<br>");
+    // document.write("The sum in let sum is : "+ sum);
+    document.write("The sum in var varSum is : "+ varSum+"<br>");
+
+    class Audi extends carA{
+        display(){
+            document.write("Driving Audi now<br>");
+        }
+    }
+    class BMW extends carA{
+        display(){
+            super.display();
+            document.write("Driving BMW now<br>");
+        }
+    }
+    function carF(model, name, avg){
+        this.model = model;
+        this.name = name;
+        this.avg = avg;
+
+        let diff = 5;
+        let calculateAvg = function(){
+            actualAvg = this.avg-this.diff;
+            document.write("Actual avg is : "+ actualAvg);
+        }
+        this.dispInfo = function(){
+            document.write(this.name + " " + this.model+ " "+this.avg);
+        }
+        this.fun = function(){
+            calculateAvg();
+        }
+    }
+    c = new carA();
+    c.display();
+    audi = new Audi();
+    audi.display();
+    bmw = new BMW();
+    bmw.display();
+    caar = new carF("530", "BMW", 22);
+    caar.dispInfo();
+    // caar.fun();
+    // caar.calculateAvg();
+    document.write("<br>");
+    function first_method(callback_method){
+        document.write("Hello this is first method, now call callback method<br>");
+        callback_method();
+    }
+    function second_method(){
+        document.write("Hello this is second method<br>");
+    }
+    
+    first_method(second_method);
+    let cars = {
+        carModel : ["Seltos", "Sonet", "Carnival"],
+        carColor: ["White", "Black","Red"],
+        driveMode : ["Automatic", "Manual"]
+    };
+
+    function order(callback_function){
+        document.write(`User has selected ${cars.carModel[2]} with ${cars.driveMode[0]} and ${cars.carColor[2]} color<br>`);
+        callback_function();
+    }
+
+    function production(){
+        document.write("Order is received, Car is under manufacture<br>");
+    }
+    order(production);
+
+    function one(callback){
+        document.write("This is method one<br>");
+        callback();
+    }
+    function two(){
+        document.write("This is method two<br>");
+    }
+    one(two);
+
 </script>
 </html>
