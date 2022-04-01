@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let car = {
+    //     carModel : ["Seltos","Sonet","Carnival"],
+    //     carColor: ["White","Black","Blue"],
+    //     driveMode : ["Automatic transmission", "Manual transmission"]
+    // }
+    // let is_showroom_open = true;
+    // function task(ms){
+    //     return new Promise((resolve,reject)=>{
+    //         if(is_showroom_open){
+    //             setTimeout(resolve, ms);
+    //         }else{
+    //             reject(document.write("Showroom is closed, hence promise is rejected<br>"))
+    //         }
+    //     });
+    // };
+    // let choose_driveMode = () =>{
+    //     return new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //                 resolve(document.write(`Which drive mode do you want to choose?<br>Customer has choosen ${car.driveMode[0]}<br>`));
+    //             }, 20000);
+    //     });
+    // };
+    // async function orderCar(){
+    //     try{
+    //         await task(3000);
+    //         document.write(`Customer has choosen ${car.carModel[1]}<br>`);
+    //         await task(4000);
+    //         document.write("Order is received, production has started<br>");
+    //         await task(3000);
+    //         document.write(`Customer has choosen ${car.driveMode[0]} mode<br>`);
+    //         await task(5000);
+    //         document.write("Car parts are assembled based on the drive mode selected<br>");
+    //         await task(3000);
+    //         document.write(`Customer has choosen ${car.carColor[0]} color<br>`);
+    //         await task(5000);
+    //         document.write("Car is ready for delivery<br>");
+    //     }catch(error){
+    //         document.write("This is the catch block which is executing<br>");
+    //     }finally{
+    //         document.write("This line executes irrespective of the program<br>");
+    //     }
+    //     document.write("Customer has to order<br>");
+    //     document.write("Production has started<br>");
+    //     await choose_driveMode();
+    //     document.write("Customer will choose the drive mode<br>");
+    //     document.write("Showroom is assembling the car for the driveMode selected<br>");
+    //     document.write("Customer chooses the color<br>");
+    //     document.write("Car is ready for delivery<br>");
+    // }
+    // orderCar();
+    // document.write("**Some other customer has booked a car**<br>");
+    // document.write("**Some other customer has requested for a car clean**<br>");
+    // document.write("**Some other customer wants a car paint**<br>");
+    // document.write("**Some other customer wants water wash**<br>");
+    // document.write("**Wants to make the payment**<br>");
+
+    function fun(str1){//local variable
+        return `Hello ${str1}`;
+    }
+    var user = "Akhil" //Glocal variable
+    var str = fun(user);
+    document.write(str+"<br>");
+    function add(a,b){
+        c = a+b;
+        return c;
+    }
+    function mul(a){
+        const z = 10; //local variable
+        return a*z;
+    }
+    var res = add(7,8)
+    document.write("Value of res: "+res+"<br>");
+    document.write("Value of c: "+c+"<br>");
+    var res1 = mul(10)
+    document.write("Value of res1: "+res1+"<br>");
+    // document.write("Value of z: "+z+"<br>");
+    function outer(){
+        document.write("Start of outer function<br>");
+        var n = 30;
+        function inner(){
+            document.write("Start of inner function<br>");
+            return n;
+        }
+        return inner();
+    }
+    var res2 = outer()
+    document.write(res2+"<br>");
+
+    var x = 10;
+    function sum1(a){
+        return function sum2(b){
+            return function sum3(c){
+                return function sum4(d){
+                    return a+b+c+d+x;
+                }
+            }
+        }
+    }
+    x1 = sum1(10);
+    x2 = x1(20);
+    x3 = x2(30);
+    x4 = x3(40);
+
+    document.write(x1+"<br>");
+    document.write(x2+"<br>");
+    document.write(x3+"<br>");
+    document.write(x4+"<br>");
+
+</script>
+</html>
