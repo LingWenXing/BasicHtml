@@ -7,8 +7,7 @@
     <title>Feedback Form</title>
 </head>
 <body>
-    <!-- <form action="success.html" method="" style="margin: 0 auto; width:250px;"> -->
-    <form action="" method="" style="margin: 0 auto; width:250px;">
+    <form action="success.html" method="post" style="margin: 0 auto; width:250px;">
         <table>
             <p>
                 <caption style="text-align:center; color:blue"><h1>Feedback Form</h1></caption>
@@ -67,9 +66,7 @@
                 </td>
             </tr>
         </table>
-        <textarea id="feedback" name="feedback" rows="4" cols="50">
-        -- Please leave a comment if any --
-        </textarea>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="        -- Please leave a comment if any --"></textarea>
         <br><br>
         <input type="submit" onclick="check()" value="Click here to Submit"><br>
     </form>
